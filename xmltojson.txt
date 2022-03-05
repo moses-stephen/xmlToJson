@@ -1,0 +1,450 @@
+let xmlParser = require('xml2json');
+let xmlString = `<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:wildearth="http://www.wildearth.com/tmrss/namespace" version="2.0">
+<title>Truffle Feed (en-us)</title>
+<description>Food &amp; Travel Shows, Recipes, Videos</description>
+<updatedAt> 2021-05-05T04:31:59.388Z </updatedAt>
+<generator>wildearth</generator>
+<pubDate>Wed, 16 Aug 2017 12:50:35 GMT</pubDate>
+<lastBuildDate>2021-05-05T05:50:43.586Z</lastBuildDate>
+<language>en-us</language>
+<series>
+<item>
+    <wildearth:id>2603</wildearth:id>
+    <guid>tmk-series-f6df0ea8a026412390f64cd6785d7b8f</guid>
+    <updatedAt> 2021-05-05T00:38:36.571Z </updatedAt>
+    <tmsID>SH038220650000</tmsID>
+    <title>
+    <![CDATA[ Mad Good Food ]]>
+    </title>
+    <description>
+    <![CDATA[ Former NFL player turned chef, Derrell Smith, shows love through food. Whether it’s cooking one of his signature family-style meals for friends or transforming that family meal into two unique meals for one, it's all about treating yourself and others. ]]>
+    </description>
+    <short_description>
+    <![CDATA[ Chef Derrell Smith cooks one of his signature family meals and then turns it into two unique meals for one. ]]>
+    </short_description>
+    <genre>Cooking</genre>
+    <rating>TV-14</rating>
+    <wildearth:meta>
+    <wildearth:meta-value name="isFeatured" value="true"/>
+    <wildearth:meta-value name="showCategory" value="Recipes"/>
+    <wildearth:meta-value name="countryOfOrigin" value="US"/>
+    <wildearth:meta-value name="svodGeoWhitelist" value="international"/>
+    <wildearth:meta-value name="productionCountry" value="US"/>
+    <wildearth:meta-value name="isMovie" value="false"/>
+    <wildearth:meta-value name="langCode" value="en-US"/>
+    <wildearth:meta-list name="lvodPlatformWhitelist">
+    <wildearth:meta-value value="att"/>
+    <wildearth:meta-value value="fubo"/>
+    <wildearth:meta-value value="metrological"/>
+    <wildearth:meta-value value="philo"/>
+    <wildearth:meta-value value="tmobile"/>
+    <wildearth:meta-value value="youtube_tv"/>
+    </wildearth:meta-list>
+    <wildearth:meta-list name="svodPlatformWhitelist">
+    <wildearth:meta-value value="apple"/>
+    <wildearth:meta-value value="sling"/>
+    </wildearth:meta-list>
+    </wildearth:meta>
+    <wildearth:localization>
+    <locale>de</locale>
+    <wildearth:id>2680</wildearth:id>
+    <title>
+        <![CDATA[ Mad Good Food ]]>
+    </title>
+    <description>
+        <![CDATA[ Derrell Smith, ehemaliger NFL-Spieler, der zum Koch wurde, zeigt Liebe durch Essen. Egal, ob es darum geht, eine seiner typischen Mahlzeiten im Familienstil für Freunde zu kochen oder diese Familienmahlzeit in zwei einzigartige kleinere Mahlzeiten zu verwandeln - es geht darum, sich selbst mal etwas zu gönnen. ]]>
+    </description>
+    <short_description> </short_description>
+    <genre/>
+    <updatedAt>2021-04-28T02:25:50.544Z</updatedAt>
+    <wildearth:meta> </wildearth:meta>
+    </wildearth:localization>
+    <media:thumbnail x-tm-id="193292" updatedAt="2021-04-08T16:47:37.952Z" url="https://truffle-assets.imgix.net/71a0ff37-srs2603-mgf-landscapethumbnail-16x9titled.jpg" width="1920" height="1080" x-tm-type="linearTVTitledImageAsset"/>
+    <media:thumbnail x-tm-id="193293" updatedAt="2021-04-01T07:55:59.078Z" url="https://truffle-assets.imgix.net/535b0b6a-srs2603-tivo-mgf-keyart-3x4-titled-jpg.jpg" width="1536" height="2048" x-tm-type="tivo3x4ShowcardTitledImage"/>
+    <media:thumbnail x-tm-id="193294" updatedAt="2021-04-01T07:56:17.889Z" url="https://truffle-assets.imgix.net/614fc0d5-srs2603-tivo-mgf-keyart-4x3untitled-jpg.jpg" width="2048" height="1536" x-tm-type="tivo4x3KeyArtCleanImage"/>
+    <media:thumbnail x-tm-id="193295" updatedAt="2021-04-01T07:56:25.808Z" url="https://truffle-assets.imgix.net/32e6e610-srs2603-tivo-mgf-showcard-3x4untitled-jpg.jpg" width="1536" height="2048" x-tm-type="tivo3x4KeyArtCleanImage"/>
+    <media:thumbnail x-tm-id="193296" updatedAt="2021-04-01T07:56:39.245Z" url="https://truffle-assets.imgix.net/c75f419f-srs2603-tivo-show-showcard-4x3titled-jpg.jpg" width="2048" height="1536" x-tm-type="tivo4x3ShowcardTitledImage"/>
+    <media:thumbnail x-tm-id="193297" updatedAt="2021-04-01T07:57:03.856Z" url="https://truffle-assets.imgix.net/fddfd464-srs2603-comcast-mgf-tall-3x4titled-jpg.jpg" width="1536" height="2048" x-tm-type="comcast9x16TitledImage"/>
+    <media:thumbnail x-tm-id="193299" updatedAt="2021-04-01T07:57:30.667Z" url="https://truffle-assets.imgix.net/906b668a-srs2603-tivo-mgf-keyart-16x9untitled.jpg" width="3840" height="2160" x-tm-type="tivo16x9KeyArtCleanImage"/>
+    <media:thumbnail x-tm-id="193300" updatedAt="2021-04-01T07:57:40.012Z" url="https://truffle-assets.imgix.net/20b0d8f9-srs2603-tivo-mgf-showcard-16x9titled-jpg.jpg" width="3840" height="2160" x-tm-type="tivo16x9ShowcardTitledImage"/>
+    <media:thumbnail x-tm-id="193301" updatedAt="2021-04-01T07:57:46.665Z" url="https://truffle-assets.imgix.net/3d36b492-srs2603-comcast-mgf-landscape-4x3titled-jpg.jpg" width="2048" height="1536" x-tm-type="comcast4x3PosterImage"/>
+    <media:thumbnail x-tm-id="193302" updatedAt="2021-04-01T07:58:01.551Z" url="https://truffle-assets.imgix.net/73f3f478-srs2603-att-mgf-lowresposter.jpg" width="288" height="432" x-tm-type="attPosterTitledImage"/>
+    <media:thumbnail x-tm-id="193303" updatedAt="2021-04-01T07:58:15.692Z" url="https://truffle-assets.imgix.net/32f4c772-srs2603-pluto-mgf-squareimage1-660x660-jpg.jpg" width="660" height="660" x-tm-type="pluto600x600TitledImage"/>
+    <media:thumbnail x-tm-id="193304" updatedAt="2021-04-01T07:58:24.693Z" url="https://truffle-assets.imgix.net/e897c086-srs2603-pluto-mgf-squareimage2-1080x1080.jpg" width="1080" height="1080" x-tm-type="pluto1080x1080TitledImage"/>
+    <media:thumbnail x-tm-id="193305" updatedAt="2021-04-01T08:00:23.665Z" url="https://truffle-assets.imgix.net/3b311909-srs2603-apple-mgf-16x9keyart.png" width="1920" height="1080" x-tm-type="itunes16x9TileImage"/>
+    <media:thumbnail x-tm-id="193306" updatedAt="2021-04-01T08:00:31.207Z" url="https://truffle-assets.imgix.net/efebf0df-srs2603-apple-mgf-backdroptall.png" width="1680" height="3636" x-tm-type="itunesHighResTallImage"/>
+    <media:thumbnail x-tm-id="193307" updatedAt="2021-04-01T08:00:43.476Z" url="https://truffle-assets.imgix.net/0ceac0ec-srs2603-apple-mgf-backdropwide-4x3untitled.jpg" width="4320" height="3240" x-tm-type="itunesHighResWideImage"/>
+    <media:thumbnail x-tm-id="193308" updatedAt="2021-04-01T08:00:47.949Z" url="https://truffle-assets.imgix.net/cecf9544-srs2603-apple-mgf-fullcolorcontentlogo.png" width="4320" height="1300" x-tm-type="itunesFullColorLogoImage"/>
+    <media:thumbnail x-tm-id="193309" updatedAt="2021-04-01T08:00:56.744Z" url="https://truffle-assets.imgix.net/621e529e-srs2603-apple-mgf-singlecolorcontentlogo.png" width="4320" height="1300" x-tm-type="itunesSingleColorLogoImage"/>
+    <media:thumbnail x-tm-id="193292" updatedAt="2021-04-08T16:47:37.952Z" url="https://truffle-assets.imgix.net/71a0ff37-srs2603-mgf-landscapethumbnail-16x9titled.jpg" width="1920" height="1080" x-tm-type="titled"/>
+    <episodes>
+        <item>
+            <wildearth:id>47504</wildearth:id>
+            <guid isPermaLink="false">tmk-video-122f684d423a4dde9c519fb933af2b61</guid>
+            <tmsID>EP038220650005</tmsID>
+            <title>
+               <![CDATA[ Mother's Day ]]>
+            </title>
+            <description>
+                <![CDATA[ Mother’s Day has a special place in Chef Derrell’s life; he shares his favorite family meal of shrimp with grits, cheddar biscuits and stories from past celebrations. Solo meals include grit cakes, shrimp ceviche and a fancy breakfast biscuit sandwich. ]]>
+            </description>
+            <short_description>
+                <![CDATA[ Chef Derrell shares his favorite Mother’s Day meal of shrimp and grits, ceviche and a fancy biscuit sandwich. ]]>
+            </short_description>
+            <updatedAt> 2021-05-05T00:38:36.571Z </updatedAt>
+            <episodeNumber>5</episodeNumber>
+            <seasonNumber>1</seasonNumber>
+            <wildearth:localization>
+            <locale>de</locale>
+            <wildearth:id>48576</wildearth:id>
+            <title>
+            <![CDATA[ Muttertag ]]>
+            </title>
+            <description>
+            <![CDATA[ Muttertag hat einen besonderen Stellenwert im Leben von Chefkoch Derrell. Er zeigt uns heute sein Lieblings Familiengericht bestehend aus Garnelen mit Grieß, Cheddarkeksen und Geschichten aus vergangenen Festen. Zu den einzigartigen kleineren Mahlzeiten gehören Körnerkuchen, Shrimps Ceviche und ein schickes Frühstückssandwich. ]]>
+            </description>
+            <short_description> </short_description>
+            <updatedAt>2021-04-28T11:18:49.827Z</updatedAt>
+            <wildearth:meta> </wildearth:meta>
+            </wildearth:localization>
+            <media:thumbnail x-tm-id="194702" updatedAt="2021-04-28T02:16:19.511Z" url="https://truffle-assets.imgix.net/84cd95d5-vid47504-mgf-105-mothersday-thumb-3.png?w=1920" width="1920" height="1080"/>
+            <vod/>
+            <wildearth:meta>
+                <wildearth:meta-value name="isSVODSample" value="false"/>
+                <wildearth:meta-value name="lvodExpireDate" value="2024-05-07T07:00:00.000Z"/>
+                <wildearth:meta-value name="svodExpireDate" value="2024-05-07T07:00:00.000Z"/>
+                <wildearth:meta-value name="svodGeoWhitelist" value="international"/>
+                <wildearth:meta-value name="showCategory" value="Recipes"/>
+                <wildearth:meta-value name="isFeatured" value="true"/>
+                <wildearth:meta-value name="countryOfOrigin" value="US"/>
+                <wildearth:meta-value name="productionCountry" value="US"/>
+                <wildearth:meta-value name="langCode" value="en-US"/>
+                <wildearth:meta-list name="avodPlatformWhitelist"/>
+                <wildearth:meta-list name="verticals">
+                    <wildearth:meta-value value="food"/>
+                </wildearth:meta-list>
+                <wildearth:meta-list name="svodPlatformWhitelist">
+                    <wildearth:meta-value value="apple"/>
+                    <wildearth:meta-value value="sling"/>
+                </wildearth:meta-list>
+            </wildearth:meta>
+            <licenseStartDate>2021-05-07T00:00:00.000Z</licenseStartDate>
+            <media:keywords>
+            <![CDATA[ ]]>
+            </media:keywords>
+            <closedCaptions>https://s3.amazonaws.com/truffle-captions/en-us/472125.scc</closedCaptions>
+            <wildearth:localClosedCaptions langCode="de">https://s3.amazonaws.com/truffle-captions/en-us/472125.de.scc</wildearth:localClosedCaptions>
+            <wildearth:localClosedCaptions langCode="en">https://s3.amazonaws.com/truffle-captions/en-us/472125.scc</wildearth:localClosedCaptions>
+            <media:content x-tm-id="472125" updatedAt="2021-04-27T04:28:07.846Z" url="https://s3.amazonaws.com/truffle-originals/b9baca8f-vid47504-mgf-105-mothersday-04222021-h264.mp4" duration="1320" medium="video" adBreakPoints="00:07:44:04,00:12:24:16,00:18:01:11,00:21:59:29" fps="29.97"/>
+            <prores x-tm-id="11110" updatedAt="2021-04-23T03:18:42.375Z" url="https://s3-us-west-1.amazonaws.com/com.wildearth.editshare-public/3837af1a-vid47504-mgf-105-mothersday-04222021-prores.mov"/>
+       </item>
+   </episodes>
+</item>
+    <item>
+<wildearth:id>1969</wildearth:id>
+<guid>tmk-series-b639d3af49df49a6a9fb53e783d2f253</guid>
+<updatedAt> 2021-02-04T23:04:01.521Z </updatedAt>
+<tmsID>SH036548810000</tmsID>
+<title>
+<![CDATA[ Barista ]]>
+</title>
+<description>
+<![CDATA[ Once a year, thousands of baristas square off in competitions around the U.S., but only one will become the National Champion. BARISTA takes the viewer on a humorous, emotional and enlightening look into the unimaginable world of coffee competitions and the passionate, lovable and quirky characters that devote their lives to them. ]]>
+</description>
+<short_description>
+<![CDATA[ Thousands of baristas face off in competitions around the U.S., but only one will become the Champion. ]]>
+</short_description>
+<genre>Documentary</genre>
+<rating>TV-14</rating>
+<wildearth:meta>
+<wildearth:meta-value name="isSVODSample" value="false"/>
+<wildearth:meta-value name="lvodExpireDate" value="2021-10-15T07:00:00.000Z"/>
+<wildearth:meta-value name="svodExpireDate" value="2021-10-15T07:00:00.000Z"/>
+<wildearth:meta-value name="svodGeoWhitelist" value="domestic"/>
+<wildearth:meta-value name="showCategory" value="Recipes"/>
+<wildearth:meta-value name="countryOfOrigin" value="US"/>
+<wildearth:meta-value name="productionCountry" value="US"/>
+<wildearth:meta-value name="langCode" value="en-US"/>
+<wildearth:meta-value name="isFeatured" value="false"/>
+<wildearth:meta-value name="isMovie" value="true"/>
+<wildearth:meta-list name="avodPlatformWhitelist"/>
+<wildearth:meta-list name="verticals">
+<wildearth:meta-value value="food"/>
+</wildearth:meta-list>
+<wildearth:meta-list name="svodPlatformWhitelist">
+<wildearth:meta-value value="amazon"/>
+<wildearth:meta-value value="apple"/>
+<wildearth:meta-value value="sling"/>
+</wildearth:meta-list>
+<wildearth:meta-list name="lvodPlatformWhitelist">
+<wildearth:meta-value value="att"/>
+<wildearth:meta-value value="philo"/>
+<wildearth:meta-value value="tmobile"/>
+</wildearth:meta-list>
+</wildearth:meta>
+<media:thumbnail x-tm-id="164940" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/48ad8cb8-barista_apple_backdroptall_112519.png" width="1680" height="3636" x-tm-type="itunesHighResTallImage"/>
+<media:thumbnail x-tm-id="164941" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/2c85a212-barista_apple_backdropwide_112519.png" width="4320" height="3239" x-tm-type="itunesHighResWideImage"/>
+<media:thumbnail x-tm-id="164943" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/fe0b2c77-barista_apple_singlecolorlogo_112519.png" width="4320" height="1300" x-tm-type="itunesSingleColorLogoImage"/>
+<media:thumbnail x-tm-id="164944" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/2179f3e0-barista_apple_coverart_112519.png" width="1920" height="1080" x-tm-type="itunes16x9TileImage"/>
+<media:thumbnail x-tm-id="164946" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/41057de0-barista_apple_fullcolorlogo_112519.png" width="4320" height="1300" x-tm-type="itunesFullColorLogoImage"/>
+<media:thumbnail x-tm-id="164947" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/67a4d004-barista_comcast_landscape.png" width="2048" height="1536" x-tm-type="comcast4x3PosterImage"/>
+<media:thumbnail x-tm-id="164948" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/32f1bcfa-barista_comcast_tall_112519.png" width="1536" height="2048" x-tm-type="comcast3x4PosterImage"/>
+<media:thumbnail x-tm-id="164950" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/6adeebf1-barista_roku_background_112519.jpg" width="1920" height="1080" x-tm-type="roku16x9Image"/>
+<media:thumbnail x-tm-id="164951" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/b674ee10-barista_roku_keyart_112519.jpg" width="1920" height="1080" x-tm-type="roku16x9ImageTitled"/>
+<media:thumbnail x-tm-id="164952" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/38641a4c-barista_roku_portrait_112519.jpg" width="1440" height="2160" x-tm-type="roku2x3PosterImage"/>
+<media:thumbnail x-tm-id="164953" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/fb3b0f5d-barista_hero_image.jpg" width="1920" height="1080" x-tm-type="linearTVTitledImageAsset"/>
+<media:thumbnail x-tm-id="174237" updatedAt="2020-04-26T21:49:01.380Z" url="https://truffle-assets.imgix.net/8604f8cb-tivo-barista-showcard-3x4titled.jpg" width="1536" height="2048" x-tm-type="tivo3x4ShowcardTitledImage"/>
+<media:thumbnail x-tm-id="174238" updatedAt="2020-04-26T21:49:56.919Z" url="https://truffle-assets.imgix.net/ff0013ee-tivo-barista-keyart-3x4untitled.jpg" width="1536" height="2048" x-tm-type="tivo3x4KeyArtCleanImage"/>
+<media:thumbnail x-tm-id="174239" updatedAt="2020-04-26T21:50:26.948Z" url="https://truffle-assets.imgix.net/2b985b14-tivo-barista-showcard-4x3titled.jpg" width="2048" height="1536" x-tm-type="tivo4x3ShowcardTitledImage"/>
+<media:thumbnail x-tm-id="174240" updatedAt="2020-04-26T21:50:53.029Z" url="https://truffle-assets.imgix.net/0894a8b0-tivo-barista-keyart-4x3untitled.jpg" width="2048" height="1536" x-tm-type="tivo4x3KeyArtCleanImage"/>
+<media:thumbnail x-tm-id="174241" updatedAt="2020-04-26T21:51:12.692Z" url="https://truffle-assets.imgix.net/6e1170b9-tivo-barista-keyart-16x9untitled.jpg" width="3840" height="2160" x-tm-type="tivo16x9KeyArtCleanImage"/>
+<media:thumbnail x-tm-id="164953" updatedAt="2020-01-08T05:31:20.487Z" url="https://truffle-assets.imgix.net/fb3b0f5d-barista_hero_image.jpg" width="1920" height="1080" x-tm-type="titled"/>
+<vod/>
+<licenseStartDate>2019-12-07T04:00:00.000Z</licenseStartDate>
+<media:keywords>
+<![CDATA[ ]]>
+</media:keywords>
+<closedCaptions>https://s3.amazonaws.com/truffle-captions/en-us/347296.scc</closedCaptions>
+<wildearth:localClosedCaptions langCode="en">https://s3.amazonaws.com/truffle-captions/en-us/347296.scc</wildearth:localClosedCaptions>
+<media:content x-tm-id="347296" updatedAt="2021-02-04T23:04:01.521Z" url="https://s3.amazonaws.com/truffle-originals/75f5b2e1-barista-041720-h264.mp4" duration="6059" medium="video" adBreakPoints="00:16:07:00,00:32:46:00,00:54:09:00,01:15:55:00,01:28:37:00,01:34:39:00,01:40:59:00" fps="29.97"/>
+<prores x-tm-id="7738" updatedAt="2020-04-25T13:57:28.680Z" url="https://s3-us-west-1.amazonaws.com/com.wildearth.editshare-public/288bacf1-barista-041720-prores.mov"/>
+</item>
+</series>
+</rss>
+`;
+
+var jsonData = xmlParser.toJson(xmlString)
+// console.log('jsonData', jsonData);
+
+var output = JSON.parse(jsonData);
+// console.log('output', output.rss);
+
+var result = {
+    channel: {
+        channel_title: output.rss.title,
+        channel_description: output.rss.description,
+        channel_generator: output.rss.generator,
+        channel_pubDate: output.rss.pubDate,
+        channel_lastBuildDate: output.rss.lastBuildDate,
+        channel_updatedAt: output.rss.updatedAt,
+        channel_language: output.rss.language
+    },
+
+};
+if (output.rss.series && output.rss.series.item && output.rss.series.item.length > 0) {
+    var series = [];
+    var movies = [];
+    output.rss.series.item.forEach(element => {
+        if (element['wildearth:meta'] && element['wildearth:meta']['wildearth:meta-value'] && element['wildearth:meta']['wildearth:meta-value'].length > 0) {
+            const movie = element['wildearth:meta']['wildearth:meta-value'].find(item => (item.name == 'isMovie' && item.value == 'true'));
+            if (movie) {
+                movies.push(element);
+            } else {
+                series.push(element);
+            }
+        }
+    });
+    series.forEach(element => {
+        var mediathumbnail_height = [];
+        var mediathumbnail_width = [];
+        var mediathumbnail_url = [];
+        var mediathumbnail_updatedAt = [];
+        var mediathumbnail_x_tm_id = [];
+        var mediathumbnail_x_tm_type = [];
+        if (element['media:thumbnail'] && element['media:thumbnail'].length > 0) {
+            element['media:thumbnail'].forEach(item => {
+                mediathumbnail_height.push(item.height)
+                mediathumbnail_width.push(item.width)
+                mediathumbnail_url.push(item.url)
+                mediathumbnail_updatedAt.push(item.updatedAt)
+                mediathumbnail_x_tm_id.push(item['x-tm-id'])
+                mediathumbnail_x_tm_type.push(item['x-tm-type'])
+            })
+        }
+        var meta_value_name = meta_value_value = [];
+        if (element['wildearth:meta'] && element['wildearth:meta']['wildearth:meta-value'] && element['wildearth:meta']['wildearth:meta-value'].length > 0) {
+            element['wildearth:meta']['wildearth:meta-value'].forEach(item => {
+                meta_value_name.push(item.name);
+                meta_value_value.push(item.value);
+            });
+        }
+        var meta_list_value = [];
+        if (element['wildearth:meta'] && element['wildearth:meta']['wildearth:meta-list'] && element['wildearth:meta']['wildearth:meta-list'].length > 0) {
+            element['wildearth:meta']['wildearth:meta-list'].forEach(item => {
+                if (item['wildearth:meta-value'] && item['wildearth:meta-value'].length > 0) {
+                    item['wildearth:meta-value'].forEach(item1 => {
+                        meta_list_value.push(item1.value);
+                    });
+                }
+            });
+        }
+        var episode_meta_name = episode_meta_value = [];
+        if (element.episodes && element.episodes.item && element.episodes.item['wildearth:meta'] && element.episodes.item['wildearth:meta']['wildearth:meta-value']){
+            element.episodes.item['wildearth:meta']['wildearth:meta-value'].forEach(item => {
+                episode_meta_name.push(item.name);
+                episode_meta_value.push(item.value);
+            });
+        }
+
+        var episode_meta_list = [];
+        var episode_meta_vertical = '';
+        if (element.episodes && element.episodes.item && element.episodes.item['wildearth:meta'] && element.episodes.item['wildearth:meta']['wildearth:meta-list']) {
+            const data = element.episodes.item['wildearth:meta']['wildearth:meta-list'].find(item => item.name == 'svodPlatformWhitelist');
+            data['wildearth:meta-value'].forEach(item => {
+                episode_meta_list.push(item.value);
+            });
+            const verticals = element.episodes.item['wildearth:meta']['wildearth:meta-list'].find(item => item.name == 'verticals');
+            episode_meta_vertical = verticals['wildearth:meta-value'].value
+        }
+
+        var episode_localClosedCaptions = episode_localClosedCaptions_lang = [];
+        if (element.episodes && element.episodes.item && element.episodes.item['wildearth:localClosedCaptions']) {
+            element.episodes.item['wildearth:localClosedCaptions'].forEach(item=> {
+                episode_localClosedCaptions.push(item.$t);
+                episode_localClosedCaptions_lang.push(item.langCode);
+            })
+        }
+        result.series.push({
+            title_type: 'Episode',
+            series_wildearth_id: element['wildearth:id'],
+            series_guid: element.guid,
+            series_updatedAt: element.updatedAt,
+            series_tmsID: element.tmsID,
+            series_title: element.title,
+            series_description: element.description,
+            series_wildearth_localization_locale: element['wildearth:localization'] ? element['wildearth:localization'].locale : '',
+            series_wildearth_localization_wildearth_id: element['wildearth:localization'] ? element['wildearth:localization']['wildearth:id']: '',
+            series_wildearth_localization_title: element['wildearth:localization'] ? element['wildearth:localization'].title: '',
+            series_wildearth_localization_description: element['wildearth:localization'] ? element['wildearth:localization'].description: '',
+            series_wildearth_localization_updatedAt: element['wildearth:localization'] ? element['wildearth:localization'].updatedAt: '',
+            series_genre: element.genre,
+            series_rating: element.rating ? element.rating : '',
+            series_mediathumbnail_height: mediathumbnail_height,
+            series_mediathumbnail_width: mediathumbnail_width,
+            series_mediathumbnail_url: mediathumbnail_url,
+            series_mediathumbnail_updatedAt: mediathumbnail_updatedAt,
+            'series_mediathumbnail_x-tm-id': mediathumbnail_x_tm_id,
+            'series_mediathumbnail_x-tm-type': mediathumbnail_x_tm_type,
+            series_meta_value_name: meta_value_name,
+            series_meta_value_value: meta_value_value,
+            series_meta_list_value: meta_list_value,
+            series_localClosedCaptions: '', //need to ask
+            series_localClosedCaptions_lang: '', //need to ask
+            episodes: [
+                {
+                    episode_wildearth_id: element.episodes.item['wildearth:id'],
+                    episode_guid: element.episodes.item.guid.$t,
+                    episode_tmsID: element.episodes.item.tmsID,
+                    episode_updatedAt: element.episodes.item.updatedAt,
+                    episode_title: element.episodes.item.title,
+                    episode_description:element.episodes.item.description,
+                    episode_episodeNumber: element.episodes.item.episodeNumber,
+                    episode_seasonNumber: element.episodes.item.seasonNumber,
+                    episode_wildearth_localization_locale: element.episodes.item['wildearth:localization'].locale,
+                    episode_wildearth_localization_wildearth_id: element.episodes.item['wildearth:localization']['wildearth:id'],
+                    episode_wildearth_localization_title: element.episodes.item['wildearth:localization'].title,
+                    episode_wildearth_localization_description: element.episodes.item['wildearth:localization'].description,
+                    episode_wildearth_localization_updatedAt: element.episodes.item['wildearth:localization'].updatedAt,
+                    episode_mediathumbnail_width: element.episodes.item['media:thumbnail'].width,
+                    episode_mediathumbnail_height: element.episodes.item['media:thumbnail'].height,
+                    episode_mediathumbnail_url: element.episodes.item['media:thumbnail'].url,
+                    episode_mediathumbnail_updatedAt: element.episodes.item['media:thumbnail'].updatedAt,
+                    'episode_mediathumbnail_x-tm-id': element.episodes.item['media:thumbnail']['x-tm-id'],
+                    episode_media_keywords: element.episodes.item['media:keywords'],
+                    episode_meta_name: episode_meta_name,
+                    episode_meta_value: episode_meta_value,
+                    episode_meta_list: episode_meta_list,
+                    episode_meta_vertical: episode_meta_vertical,
+                    episode_closedCaptions: element.episodes.item.closedCaptions,
+                    episode_localClosedCaptions: episode_localClosedCaptions,
+                    episode_localClosedCaptions_lang: episode_localClosedCaptions_lang,
+                    episode_licenseStartDate: element.episodes.item.licenseStartDate,
+                    episode_licenseEndDate: '', // need to ask
+                    episode_mediacontent_updatedAt: element.episodes.item['media:content'].updatedAt,
+                    episode_mediacontent_duration: element.episodes.item['media:content'].duration,
+                    episode_mediacontent_adBreakPoints: element.episodes.item['media:content'].adBreakPoints,
+                    episode_mediacontent_fps: element.episodes.item['media:content'].fps,
+                    episode_mediacontent_medium: element.episodes.item['media:content'].medium,
+                    episode_mediacontent_url: element.episodes.item['media:content'].url,
+                    episode_comPiece_updatedAt: '', //need to ask
+                    episode_comPiece_url: '', //need to ask
+                    'episode_prores_x-tm-id': element.episodes.item.prores['x-tm-id'],
+                    episode_prores_updatedAt: element.episodes.item.prores.updatedAt,
+                    episode_prores_url: element.episodes.item.prores.url
+                }
+            ]
+        });
+    });
+
+    movies.forEach(element => {
+        var mediathumbnail_height = [];
+        var mediathumbnail_width = [];
+        var mediathumbnail_url = [];
+        var mediathumbnail_updatedAt = [];
+        var mediathumbnail_x_tm_id = [];
+        var mediathumbnail_x_tm_type = [];
+        if (element['media:thumbnail'] && element['media:thumbnail'].length > 0) {
+            element['media:thumbnail'].forEach(item => {
+                mediathumbnail_height.push(item.height)
+                mediathumbnail_width.push(item.width)
+                mediathumbnail_url.push(item.url)
+                mediathumbnail_updatedAt.push(item.updatedAt)
+                mediathumbnail_x_tm_id.push(item['x-tm-id'])
+                mediathumbnail_x_tm_type.push(item['x-tm-type'])
+            })
+        }
+
+        var movie_meta_value_name = movie_meta_value_value = [];
+        if(element['wildearth:meta'] && element['wildearth:meta']['wildearth:meta-value']) {
+            element['wildearth:meta']['wildearth:meta-value'].forEach(item => {
+                movie_meta_value_name.push(item.name);
+                movie_meta_value_value.push(item.value);
+            })
+        }
+        result.movies.push(
+            {
+                title_type: 'Movie',
+                movie_wildearth_id: element['wildearth:id'],
+                movie_guid: element.guid,
+                movie_updatedAt: element.updatedAt,
+                movie_tmsID: element.tmsID,
+                movie_title: element.title,
+                movie_description: element.description,
+                movie_wildearth_localization_locale: '',
+                movie_wildearth_localization_wildearth_id: '',
+                movie_wildearth_localization_title: '',
+                movie_wildearth_localization_description: '',
+                movie_wildearth_localization_updatedAt: '',
+                movie_genre: element.genre,
+                movie_rating: '',
+                movie_mediathumbnail_height: mediathumbnail_height,
+                movie_mediathumbnail_width: mediathumbnail_width,
+                movie_mediathumbnail_url: mediathumbnail_url,
+                movie_mediathumbnail_updatedAt: mediathumbnail_updatedAt,
+                'movie_mediathumbnail_x-tm-id': mediathumbnail_x_tm_id,
+                'movie_mediathumbnail_x-tm-type': mediathumbnail_x_tm_type,
+                movie_media_keywords: element['media:keywords'],
+                movie_meta_value_name: movie_meta_value_name,
+                movie_meta_value_value: movie_meta_value_value,
+                movie_meta_list_value: [],
+                movie_closedCaptions: element.closedCaptions,
+                movie_localClosedCaptions: element['wildearth:localClosedCaptions'].$t,
+                movie_localClosedCaptions_lang: element['wildearth:localClosedCaptions'].langCode,
+                movie_licenseStartDate: element.licenseStartDate,
+                movie_licenseEndDate: '',
+                movie_mediacontent_updatedAt: element['media:content'].updatedAt,
+                movie_mediacontent_duration: element['media:content'].duration,
+                movie_mediacontent_adBreakPoints: element['media:content'].adBreakPoints,
+                 movie_mediacontent_fps: element['media:content'].fps,
+                movie_mediacontent_medium: element['media:content'].medium,
+                movie_mediacontent_url: element['media:content'].url,
+                movie_comPiece_updatedAt: '',
+                movie_comPiece_url: '',
+                'movie_prores_x-tm-id': element.prores['x-tm-id'],
+                movie_prores_updatedAt: element.prores.updatedAt,
+                movie_prores_url: element.prores.url
+              }
+        );
+    });
+}
+console.log('result', result);
